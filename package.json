@@ -2,21 +2,31 @@
   "name": "cucumber-sandbox",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "index.ts",
   "devDependencies": {
     "@testing-library/cypress": "^7.0.6",
     "@types/cypress-cucumber-preprocessor": "^4.0.0",
     "@types/node": "^15.3.1",
     "cypress": "^7.3.0",
     "cypress-cucumber-preprocessor": "^4.1.0",
+    "cypress-iframe": "^1.0.1",
+    "multiple-cucumber-html-reporter": "^1.18.0",
     "typescript": "^4.2.4"
   },
   "scripts": {
-    "cypress:test": "echo \"Error: no test specified\" && exit 1",
-    "cypress:open": "cypress open"
+    "cy": "cypress run",
+    "cy:open": "cypress open",
+    "cy:tags": "cypress-tags run -e",
+    "cy:report": "node html-report-screenshot.ts"
   },
   "cypress-cucumber-preprocessor": {
-    "nonGlobalStepDefinitions": true
+    "nonGlobalStepDefinitions": true,
+    "cucumberJson": {
+      "generate": true,
+      "outputFolder": "cypress/cucumber-json",
+      "filePrefix": "",
+      "fileSuffix": ".cucumber"
+    }
   },
   "author": "",
   "license": "ISC"

@@ -1,0 +1,7 @@
+{
+  "statusCode": 200,
+  "body": {
+    "message": "Request successful",
+    "result": ["my-data"]
+  }
+}

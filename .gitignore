@@ -59,7 +59,14 @@ typings/
 cypress.env.json
 
 
+#ide files
 .idea
+.vscode
 
+# cypress directories
 cypress/videos
 cypress/screenshots
+
+# reports directory
+cypress/cucumber-json
+reports
