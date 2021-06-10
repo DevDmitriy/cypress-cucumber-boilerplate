@@ -9,6 +9,6 @@ export class SportsResponsible {
     cy.url().should("include", urlName);
     cy.findByText(locators.heading.text, {
       selector: locators.heading.selector,
-    }).should("have.text", locators.heading.text);
+    }).should("have.text", 'Wrong text!');
   };
 }

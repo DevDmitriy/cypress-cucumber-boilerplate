@@ -17,7 +17,7 @@
     "cy": "cypress run",
     "cy:open": "cypress open",
     "cy:tags": "cypress-tags run -e",
-    "cy:report": "node html-report-screenshot.ts"
+    "cy:report": "node html-report.ts"
   },
   "cypress-cucumber-preprocessor": {
     "nonGlobalStepDefinitions": true,
