@@ -13,7 +13,9 @@ Install by running:
 npm install
 ```
 
-### To run tests
+rename "cypress.env.example.json" to "cypress.env.json" and add your credentials
+
+## To run tests
 
 To run tests headless:
 ```shell

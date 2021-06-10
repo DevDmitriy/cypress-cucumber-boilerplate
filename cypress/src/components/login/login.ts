@@ -1,14 +1,23 @@
+const locators = {
+  loginBtn: { name: "Login" },
+  usernameInput: { selector: '#psramloginformpopup input[name="username"]' },
+  passwordInput: { selector: '#psramloginformpopup input[name="password"]' },
+  userName: { selector: ".username" },
+};
+
 export class Login {
   open = () => {
-    cy.visit(Cypress.env('host'));
-  }
+    cy.visit(Cypress.env("host"));
+  };
   enterCredentials = () => {
-    cy.findByRole('button', { name: /Login/i }).click()
-    cy.get('#psramloginformpopup input[name="username"]').type(Cypress.env('user'))
-    cy.get('#psramloginformpopup input[name="password"]').type(Cypress.env('password'))
-    cy.get('#psramloginformpopup button[type="submit"]').click()
-  }
+    cy.findByRole("button", { name: locators.loginBtn.name }).click();
+    cy.get(locators.passwordInput.selector).type(Cypress.env("password"));
+    cy.get(locators.usernameInput.selector).type(Cypress.env("user"));
+    cy.findByRole("dialog")
+      .findByRole("button", { name: locators.loginBtn.name })
+      .click();
+  };
   checkIfLoggedId = () => {
-    cy.get('.username').should('be.visible')
-  }
+    cy.get(locators.userName.selector).should("be.visible");
+  };
 }

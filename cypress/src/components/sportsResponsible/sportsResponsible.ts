@@ -1,6 +1,14 @@
+const locators = {
+  heading: { text: "Responsible Gaming", selector: "h1" },
+};
+
+const urlName = "responsible-gaming";
+
 export class SportsResponsible {
   isOpened = () => {
-    cy.url().should('include', 'responsible-gaming')
-    cy.findByText('Responsible Gaming', {selector: 'h1'}).should('have.text', 'Responsible Gaming')
-  }
+    cy.url().should("include", urlName);
+    cy.findByText(locators.heading.text, {
+      selector: locators.heading.selector,
+    }).should("have.text", locators.heading.text);
+  };
 }
