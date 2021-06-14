@@ -1,8 +1,8 @@
-import { And, Given, Then, When } from "cypress-cucumber-preprocessor/steps"
-import { Poker } from "../../src/components/poker/poker";
-import { Sports } from "../../src/components/sports/sports";
-import { SportsResponsible } from "../../src/components/sportsResponsible/sportsResponsible";
-import { loginStep } from "../../src/steps/loginStep";
+import { And, Given, Then, When } from 'cypress-cucumber-preprocessor/steps'
+import { Poker } from '../../src/components/poker/poker';
+import { Sports } from '../../src/components/sports/sports';
+import { SportsResponsible } from '../../src/components/sportsResponsible/sportsResponsible';
+import { loginStep } from '../../src/steps/loginStep';
 
 const poker = new Poker()
 const sports = new Sports()

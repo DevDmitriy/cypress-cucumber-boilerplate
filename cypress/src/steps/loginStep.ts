@@ -1,5 +1,5 @@
-import { Login } from "../components/login/login"
-import { NewsModal } from "../components/newsModal/newsModal"
+import { Login } from '../components/login/login'
+import { NewsModal } from '../components/newsModal/newsModal'
 
 const login = new Login()
 const newsModal = new NewsModal()

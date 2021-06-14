@@ -1,12 +1,12 @@
 const locators = {
-  balance: { selector: "div#accountBalance" },
+  balance: { selector: 'div#accountBalance' },
   responsibleGaming: {
-    text: "Responsible Gaming",
-    selector: "#support-navigation > a:first-child",
+    text: 'Responsible Gaming',
+    selector: '#support-navigation > a:first-child',
   },
 };
 
-const sportsUrl = "pokerstarssports";
+const sportsUrl = 'pokerstarssports';
 
 export class Sports {
   openBalance = () => {
@@ -14,7 +14,7 @@ export class Sports {
     cy.get(locators.balance.selector).click();
   };
   isOpened = () => {
-    cy.url().should("include", sportsUrl);
+    cy.url().should('include', sportsUrl);
   };
   openResponsibleGaming = () => {
     cy.findByText(locators.responsibleGaming.text, {

@@ -1,8 +1,8 @@
-import { Given, Then, When } from "cypress-cucumber-preprocessor/steps"
-import { Cashier } from "../../src/components/cashier/cashier"
-import { Poker } from "../../src/components/poker/poker"
-import { Sports } from "../../src/components/sports/sports"
-import { loginStep } from "../../src/steps/loginStep"
+import { Given, Then, When } from 'cypress-cucumber-preprocessor/steps'
+import { Cashier } from '../../src/components/cashier/cashier'
+import { Poker } from '../../src/components/poker/poker'
+import { Sports } from '../../src/components/sports/sports'
+import { loginStep } from '../../src/steps/loginStep'
 
 const poker = new Poker()
 const sports = new Sports()

@@ -1,13 +1,13 @@
 const locators = {
   sportsTab: {
-    text: "SPORTS",
-    selector: ".desktopVerticals .sports-vertical a",
+    text: 'SPORTS',
+    selector: '.desktopVerticals .sports-vertical a',
   },
   casinoTab: {
-    text: "Casino",
-    selector: ".desktopVerticals .casino-vertical a",
+    text: 'Casino',
+    selector: '.desktopVerticals .casino-vertical a',
   },
-  balance: { selector: "div#accountBalance" },
+  balance: { selector: 'div#accountBalance' },
 };
 
 export class Poker {
