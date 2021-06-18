@@ -13,6 +13,8 @@ Install by running:
 npm install
 ```
 
+register on pokerstars.com
+
 rename "cypress.env.example.json" to "cypress.env.json" and add your credentials
 
 ## To run tests
@@ -36,4 +38,4 @@ To generate html report:
 ```shell
 npm run cy:report
 ```
-
+html repoets are located in "/reports" folder

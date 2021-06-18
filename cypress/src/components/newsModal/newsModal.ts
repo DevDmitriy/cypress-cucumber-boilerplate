@@ -12,7 +12,7 @@ export class NewsModal {
 
     cy.get(locators.modalContainer.selector)
       .get(locators.header.selector)
-      .findByRole("button")
+      .findByRole('button')
       .click();
   };
 }
