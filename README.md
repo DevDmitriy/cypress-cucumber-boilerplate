@@ -19,14 +19,14 @@ rename "cypress.env.example.json" to "cypress.env.json" and add your credentials
 
 ## To run tests
 
-To run tests headless:
-```shell
-npm run cy
-```
-
 To run tests with UI:
 ```shell
 npm run cy:open
+```
+
+To run tests headless:
+```shell
+npm run cy
 ```
 
 To run tests with tags:
